@@ -1,0 +1,33 @@
+html{background-image: url(FSS-1800.jpg);}
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    max-width: 925px;
+    background-image: url(taupeTile.png);
+
+}
+
+header{
+    width: 100%;
+    size: 100%;
+    max-width: 925px;
+    min-width: 480px;
+    }
+
+nav{
+    ul{
+        list-style-type: none; ;}
+    padding: zero;
+    width: 100%
+    list
+}
+article{
+
+}
+footer{
+
+
+}

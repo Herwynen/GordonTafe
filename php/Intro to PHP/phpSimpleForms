@@ -1,0 +1,10 @@
+<html>
+<h2>Please select a title </h2>
+<form action='<?php echo $_SERVER["PHP_SELF"]; ?>' method='post'>
+<p/> 
+<select name='strTitle'>
+<option> Mr</option>
+<option> Dr</option>
+<option> Mrs</option>
+<option> Ms</option>
+<option> Prof</option>
