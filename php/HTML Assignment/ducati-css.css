@@ -14,11 +14,12 @@ body {
 .header{
     margin: 0%;
     padding: 0%;
-    background-color: black;
+    background-color: grey;
     background-image: url("./Images/BikeBanner.jpg");
     size: 100%, stretch;
-    background-repeat: no-repeat
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav{
@@ -30,5 +31,6 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: maroon;
+    height: 100px
     
 }

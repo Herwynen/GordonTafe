@@ -2,7 +2,7 @@
 <body>
 
 Welcome <?php echo $_GET["name"]; ?><br>
-Your Gender is: <?php echo $_GET["gender"]; ?>
+Your rego is: <?php echo $_GET["rego"]; ?>
 
 </body>
 </html> 
