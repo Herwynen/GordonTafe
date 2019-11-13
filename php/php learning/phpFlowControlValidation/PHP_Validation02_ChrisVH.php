@@ -4,22 +4,31 @@
 $name = $email = $url = "";
 $nameErr = $emailErr = $urlErr = "";
 
-if ($_Server["REQUEST_METHOD"] == "POST") {
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
-    $name = test_input($_POST["name"]);
+    $name = test_input($_POST["Name"]);
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-        $nameErr = "Only letters and white space allowed" ;
+        $nameErr = "Only letters and whitespace allowed.";
     }
 
-    $email = test_input($_POST["email"]);
+    $email = test_input($_POST["Email"]);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format"; 
+        $emailErr = "Invalid email format";
     }
 
-    $website = test_input($_POST["website"]);
+    $url = test_input($_POST["URL"]);
     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL"; 
+        $urlErr = "Invalid URL";
     }
 
 }
